@@ -1,13 +1,13 @@
 /* Styles for portfolio.html */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #1a1a2e;
     color: #fff;
 }
 
 header {
-    background: #000;
+    background-color: #1a1a2e;
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,25 +19,39 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    background-color: #1a1a2e;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar ul li {
+.navbar ul .logo {
+    margin-right: auto;
+    padding-left: 100px;
+}
+
+.navbar ul .ganda {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4b5c;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
     margin: 0 15px;
 }
 
-.navbar ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #fff;
-    padding: 14px 20px;
-    display: block;
-    text-transform: uppercase;
-    transition: background 0.3s;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-    background-color: #575fcf;
+.nav-links li a:hover {
+    color: #ff4b5c;
 }
 
 .portfolio {
